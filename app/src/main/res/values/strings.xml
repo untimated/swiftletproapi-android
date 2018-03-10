@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Swiftlet Pro</string>
+    <string name="app_register">Register</string>
+    <string name="app_home">Home</string>
+    <string name="app_add_bridge">Add Bridge</string>
+
+
+    <!-- Paragraph -->
+    <string name="app_add_bridge_description">
+
+        Please make sure your apps is in the same network
+        with swiftlet pro bridge and is turned on.
+
+        Swiftlet Pro app will find your
+        bridge and register your ownership.
+
+    </string>
+    <string name="title_activity_home_bridge">HomeBridgeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home_device">Devices</string>
+</resources>

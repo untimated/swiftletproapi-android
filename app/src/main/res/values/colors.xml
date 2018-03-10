@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#2196f3</color>
+    <color name="colorAccent">#2196f3</color>
+    <color name="textColorPrimary">#1a1a1a</color>
+    <color name="textColorHint">#8b8b8b</color>
+
+    <color name="buttonTextColor">#ffffff</color>
+    <color name="lightBlue">#80cfff</color>
+    <color name="swiftBlue">#2196f3</color>
+    <color name="darkGray">#3b3b3b</color>
+    <color name="lightGray">#808080</color>
+</resources>

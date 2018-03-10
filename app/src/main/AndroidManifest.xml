@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="thesis.com.swiftletpro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Splash"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/app_register"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HomeBridgeActivity"
+            android:label="@string/app_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddBridgeActivity"
+            android:label="@string/app_add_bridge"
+            android:parentActivityName=".HomeBridgeActivity" />
+        <activity
+            android:name=".HomeDeviceActivity"
+            android:label="@string/title_activity_home_device"
+            android:parentActivityName=".HomeBridgeActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".AddDeviceActivity"
+            android:label="Add Sensor"
+            android:parentActivityName=".HomeDeviceActivity" />
+        <activity
+            android:name=".DeviceDetailActivity"
+            android:label="Detail"
+            android:parentActivityName=".HomeDeviceActivity"
+            android:theme="@style/DeviceDetailTheme"></activity>
+
+    </application>
+
+</manifest>

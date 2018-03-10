@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="thesis.com.swiftletpro.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/switleprologo"
+        app:layout_marginTopPercent="10%"
+        app:layout_marginBottomPercent="10%"
+        app:layout_marginLeftPercent="45%"
+        android:id="@+id/logo_img"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:id="@+id/password_txt"
+        android:layout_below="@+id/username_txt"
+        android:layout_alignParentStart="true"
+        android:theme="@style/MyEditText"
+        style="@style/Widget.AppCompat.EditText" />
+
+    <Button
+        android:text="Sign In"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/login_btn"
+        android:label="Sign In"
+        android:layout_below="@+id/password_txt"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickSignIn"
+        android:theme="@style/MyButton"/>
+
+    <TextView
+        android:text="Register an account now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/register_txt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickRegister"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:id="@+id/username_txt"
+        android:theme="@style/MyEditText"
+        android:layout_below="@+id/logo_img"
+        android:layout_alignParentStart="true"
+        style="@style/Widget.AppCompat.EditText" />
+
+
+</android.support.percent.PercentRelativeLayout>
